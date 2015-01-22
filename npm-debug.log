@@ -1,60 +1,20 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'info', 'node-x11' ]
-2 info using npm@1.4.28
-3 info using node@v0.10.35
-4 verbose node symlink /usr/bin/node
-5 verbose request where is /node-x11
-6 verbose request registry https://registry.npmjs.org/
-7 verbose request id 5c8c3625d550bf2c
-8 verbose url raw /node-x11
-9 verbose url resolving [ 'https://registry.npmjs.org/', './node-x11' ]
-10 verbose url resolved https://registry.npmjs.org/node-x11
-11 verbose request where is https://registry.npmjs.org/node-x11
-12 info trying registry request attempt 1 at 07:40:28
-13 http GET https://registry.npmjs.org/node-x11
-14 http 404 https://registry.npmjs.org/node-x11
-15 verbose headers { date: 'Thu, 22 Jan 2015 02:10:30 GMT',
-15 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-15 verbose headers   'content-type': 'application/json',
-15 verbose headers   'cache-control': 'max-age=0',
-15 verbose headers   'content-length': '52',
-15 verbose headers   'accept-ranges': 'bytes',
-15 verbose headers   via: '1.1 varnish',
-15 verbose headers   age: '0',
-15 verbose headers   'x-served-by': 'cache-sn87-SIN',
-15 verbose headers   'x-cache': 'MISS',
-15 verbose headers   'x-cache-hits': '0',
-15 verbose headers   'x-timer': 'S1421892629.431630,VS0,VE814',
-15 verbose headers   'keep-alive': 'timeout=10, max=50',
-15 verbose headers   connection: 'Keep-Alive' }
-16 silly registry.get cb [ 404,
-16 silly registry.get   { date: 'Thu, 22 Jan 2015 02:10:30 GMT',
-16 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-16 silly registry.get     'content-type': 'application/json',
-16 silly registry.get     'cache-control': 'max-age=0',
-16 silly registry.get     'content-length': '52',
-16 silly registry.get     'accept-ranges': 'bytes',
-16 silly registry.get     via: '1.1 varnish',
-16 silly registry.get     age: '0',
-16 silly registry.get     'x-served-by': 'cache-sn87-SIN',
-16 silly registry.get     'x-cache': 'MISS',
-16 silly registry.get     'x-cache-hits': '0',
-16 silly registry.get     'x-timer': 'S1421892629.431630,VS0,VE814',
-16 silly registry.get     'keep-alive': 'timeout=10, max=50',
-16 silly registry.get     connection: 'Keep-Alive' } ]
-17 error 404 404 Not Found: node-x11
-17 error 404
-17 error 404 'node-x11' is not in the npm registry.
-17 error 404 You should bug the author to publish it
-17 error 404
-17 error 404 Maybe try 'npm search x11'
-17 error 404
-17 error 404 Note that you can also install from a
-17 error 404 tarball, folder, or http url, or git url.
-18 error System Linux 3.13.0-44-generic
-19 error command "/usr/bin/node" "/usr/bin/npm" "info" "node-x11"
-20 error cwd /home/plasmashadow/Public/Node-RDP
-21 error node -v v0.10.35
-22 error npm -v 1.4.28
-23 error code E404
-24 verbose exit [ 1, true ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'start' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.30
+4 error Failed to parse json
+4 error Unexpected token }
+5 error File: /Users/sathyanarrayanan/Desktop/chanllenges/node-RDP/package.json
+6 error Failed to parse package.json data.
+6 error package.json must be actual JSON, not just JavaScript.
+6 error
+6 error This is not a bug in npm.
+6 error Tell the package author to fix their package.json file. JSON.parse
+7 error System Darwin 14.0.0
+8 error command "node" "/usr/local/bin/npm" "start"
+9 error cwd /Users/sathyanarrayanan/Desktop/chanllenges/node-RDP
+10 error node -v v0.10.30
+11 error npm -v 1.4.21
+12 error file /Users/sathyanarrayanan/Desktop/chanllenges/node-RDP/package.json
+13 error code EJSONPARSE
+14 verbose exit [ 1, true ]

@@ -1,4 +1,4 @@
-var socket = io.connect("http://localhost:8000");
+var socket = io.connect("http://1.1.2.98:8000");
 
 $(document).mousemove(
 	function(e){

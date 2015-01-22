@@ -3,7 +3,7 @@ var app = express();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
-xManager = require('./xEventManager.js'),
+
 
 server.listen(8000);
 
@@ -15,5 +15,29 @@ app.get("/",function(req,res){
 
 io.sockets.on("connection",function(socket){
 
+  socket.on('move',function(data){
+  	console.log(data);
+  	io.sockets.emit('move',data);
+  });
+
+  socket.on('keyDown',function(data){
+  	io.sockets.emit('keyDown',data);
+  });
+
+  socket.on('keyUp',function(data){
+  	io.sockets.emit('keyUp',data);
+  });
+
+  socket.on('moveRelative',function(data){
+  	io.sockets.emit('moveRelative',data);
+  });
+
+  socket.on('keyPress',function(data){
+  	io.sockets.emit('keyPress',data);
+  });
+
+  socket.on('click',function(data){
+  	io.sockets.emit('click',data);
+  });
 
 });
